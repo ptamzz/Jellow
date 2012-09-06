@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/* 	
+	Description: Controls generic styling of the whole applicatiion
+	Version: 2.0
+	Date: 29/2/2012
+	Author: Pritam Pebam
+	Email: ptamzz@gmail.com
+	twitter: @ptamzz
+	URL: http://12bubbles.com; http://ptamzz.com
+*/
+
+/* @import 'header.css'; */
+@charset "utf-8";
+/* CSS Document */
+
+
+/* Makeshift CSS Reset */  
+* { margin: 0; padding: 0; }
+body { 
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 16px; 
+	-webkit-user-select: none; 
+	background-color: #F1F1F1;
+}
+
+.clear { clear: both; }
+ul { list-style: none; }
+
+/* #main { position: relative; z-index: -1000; width: 320px; height: 480px; top: -10px; background-color: #FEF; margin: 0 auto; } */
+.content { min-height: 480px; }
+.menu li:hover { cursor: pointer; }
+.menu li img.mainBtns { width: 70px; height: 70px; }
+
+.lmenu li, .rmenu li { 
+	width: 70px;
+	height: 70px;
+}
+
+.lmenuItem, .rmenu {
+	width: 70px;
+	margin: 10px auto;
+}
+
+.lmenuItem li, .rmenu li {
+	margin-bottom: 20px;
+}
+
+.btns {
+	border-radius: 35px;
+	width: 70px;
+}
+
+.lmenu, .rmenu { width: 100px; position: fixed; top: 45px; }
+	.lmenu { left: 0px; }
+	.rmenu { right: 0px; }
+
+.items { position: relative; left: 100px; top: 0; }
+
+.items ul li {
+	float: left;
+	margin-left: 10px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	margin-bottom: 40px;
+}
+
+.glowBlue {
+	box-shadow: 0 0 5px blue;
+	border-radius: 35px;
+}
+
+.glowGreen {
+	box-shadow: 0 0 5px green;
+	border-radius: 35px;
+}
+
+.glowYellow {
+	box-shadow: 0 0 5px yellow;
+	border-radius: 35px;
+}
+
