@@ -299,11 +299,12 @@ function setItemsWidth(){
 }
 
 function loadPage(page){
-	var dataString = { "page": page };
+	var dataString = { "page": page },
+		url = "page/"+page+".html";
 
 	$.ajax({
 		type: "GET",
-		url: "page.php",
+		url: url, //"page.php",
 		data: dataString,
 		cache: false,
 		success: function(data){
