@@ -55,7 +55,7 @@ ul { list-style: none; }
 	.lmenu { left: 0px; }
 	.rmenu { right: 0px; }
 
-.items { position: relative; left: 100px; top: 0; }
+.items { position: relative; left: 80px; top: 0; }
 
 .items ul li {
 	float: left;

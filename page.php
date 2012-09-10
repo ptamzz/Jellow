@@ -42,7 +42,6 @@
 			<li id="fruits" data-btngrp="2" data-state="1" class="btns"><img src="img/eat/fruits1.png" alt="fruits"/></li>
 			<li id="lunch" data-btngrp="2" data-state="1" class="btns"><img src="img/eat/lunch1.png" alt="lunch"/></li>
 			<li id="snack" data-btngrp="2" data-state="1" class="btns"><img src="img/eat/snack1.png" alt="snack"/></li>
-
 		</ul>
 <?php } else if ($page == 'play'){ ?>
 		<ul class="rmenuItem">

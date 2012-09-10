@@ -58,7 +58,7 @@ $(function() {
 	setItemsWidth();
 	
 	//To disable MobileSarai auto-select
-	/* $.fn.extend({ 
+	$.fn.extend({ 
 		disableSelection : function() { 
 			this.each(function() { 
 				this.onselectstart = function() { return false; }; 
@@ -67,7 +67,7 @@ $(function() {
 				$(this).css('-webkit-user-select', 'none'); 
 			}); 
 		} 
-	}); */
+	});
 
 	//First click
 	
@@ -276,6 +276,7 @@ $(function() {
 						iReallyDontWant.play();
 					} else {
 						reallyNo.play();
+						
 					}
 				}
 				
@@ -299,11 +300,12 @@ function setItemsWidth(){
 }
 
 function loadPage(page){
-	var dataString = { "page": page };
+	var dataString = { "page": page },
+		url = "page/"+page+".html";
 
 	$.ajax({
 		type: "GET",
-		url: "page.php",
+		url: url, //"page.php",
 		data: dataString,
 		cache: false,
 		success: function(data){
