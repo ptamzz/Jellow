@@ -7,6 +7,7 @@
 	var learn = new Audio("snd/home/learning.mp3");
 	var people = new Audio("snd/home/people.mp3");
 	var others = new Audio("snd/home/others.mp3");
+	//var homeAll = new Audio("snd/home/homeAll.mp3");
 
 //btns
 	//Level 1
@@ -69,6 +70,24 @@ $(function() {
 		} 
 	}); */
 
+	
+	/* $("#homeAll").jPlayer({
+		ready: function () {
+		  $(this).jPlayer("setMedia", {
+			mp3: "snd/home/homeAllSec.mp3"
+		  });
+		},
+		swfPath: "/js",
+		supplied: "mp3"
+		timeupdate: function(event) {
+			if(event.jPlayer.status.currentTime > .9) {
+				// do something
+				$("#homeAll").jPlayer("stop");
+			}
+		}
+	}); */
+	
+
 	//First click
 	
 	$(".btns").live("click", function(){
@@ -86,6 +105,12 @@ $(function() {
 					play.play();
 				} else if (id == 'learn'){
 					learn.play();
+					/* console.log("#divAll");
+					$("#homeAll").jPlayer("play");
+					
+					setTimeout(function(){
+						$("#homeAll").jPlayer("stop");
+						}, 900); */
 				} else if (id == 'people'){
 					people.play();
 				} else if (id == 'others'){
